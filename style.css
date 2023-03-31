@@ -369,6 +369,12 @@ footer {
   position: relative;
 }
 
+form input,
+form textarea {
+  margin-top: 1rem;
+  padding: 10%;
+}
+
 /* footer::after { 
   content: "";
   background-color: transparent;
@@ -395,6 +401,26 @@ footer {
 footer .social ul li {
   height: 30px;
   margin: 0 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  /* background-image: url(Frame.png); 
+  background-position-y: 96%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;*/
+  align-items: center;
+  gap: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  gap: 24px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -472,6 +498,7 @@ footer .social ul li {
 .container-form {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   text-align: left;
 }
@@ -485,11 +512,16 @@ footer .social ul li {
 .contact-form {
   width: 50%;
   padding-top: 3%;
-  justify-content: stretch;
 }
 
 .intro-form h3{
   text-align: justify
+}
+
+.container-form input[type="text"],
+.container-form input[type="email"],
+.container-form textarea {
+  width: 100%;
 }
 
 }
