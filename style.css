@@ -50,7 +50,6 @@ h2 {
 .intro1,
 .intro2 {
   color: #172b4d;
-  /* padding: 4%; */
 }
 
 .career {
@@ -331,6 +330,12 @@ i:hover {
   padding: 0%;
 }
 
+form input,
+form textarea {
+  margin-top: 1rem;
+  padding: 10%;
+}
+
 textarea:focus {
   outline: none;
   box-shadow: 0 0 5px #60c095;
@@ -369,22 +374,6 @@ footer {
   position: relative;
 }
 
-form input,
-form textarea {
-  margin-top: 1rem;
-  padding: 10%;
-}
-
-/* footer::after { 
-  content: "";
-  background-color: transparent;
-  position: absolute;
-  left: 49.58%;
-  right: 12.56%;
-  top: 58.45%;
-  bottom: -8.97%;
-}*/
-
 .line {
   width: 50%;
   height: 8px;
@@ -406,10 +395,6 @@ footer .social ul li {
 .contact-form {
   display: flex;
   flex-direction: column;
-  /* background-image: url(Frame.png); 
-  background-position-y: 96%;
-  background-position-x: 100%;
-  background-repeat: no-repeat;*/
   align-items: center;
   gap: 24px;
 }
@@ -441,6 +426,7 @@ form {
   .intro-form h3 {
     padding-top: 0%;
     padding-bottom: 0%;
+    text-align: justify;
   }
 
   .line {
@@ -466,62 +452,53 @@ form {
     font-size: 20px;
   }
 
-.heading {
-  display: flex;
-  justify-content: center;
-}
+  .heading {
+    display: flex;
+    justify-content: center;
+  }
 
-.intro1{
-  margin-left: 0px;
-}
+  .works,
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.works,
-.summary {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .work-item,
+  .summary-card {
+    width: 27%;
+  }
 
-.work-item,
-.summary-card {
-  width: 27%;
-}
+  .app-wrap {
+    background-image: url('Header-llustration-desktop.svg');
+  }
 
-.app-wrap {
-  background-image: url('Header-llustration-desktop.svg');
-}
+  .about-me {
+    background-image: url('about-me-desktop.svg');
+  }
 
-.about-me {
-  background-image: url('about-me-desktop.svg');
-}
+  .container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+  }
 
-.container-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  text-align: left;
-}
+  .intro-form {
+    width: 30%;
+    text-align: left !important;
+    justify-content: flex-start;
+  }
 
-.intro-form{
-  width: 30%;
-  text-align: left !important;
-  justify-content: flex-start;
-}
+  .contact-form {
+    width: 50%;
+    padding-top: 3%;
+  }
 
-.contact-form {
-  width: 50%;
-  padding-top: 3%;
-}
-
-.intro-form h3{
-  text-align: justify
-}
-
-.container-form input[type="text"],
-.container-form input[type="email"],
-.container-form textarea {
-  width: 100%;
-}
-
+  .container-form input[type="text"],
+  .container-form input[type="email"],
+  .container-form textarea {
+    width: 100%;
+  }
 }
