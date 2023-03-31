@@ -47,8 +47,8 @@ h2 {
   top: 5%;
 }
 
-.my-name,
-.greeting {
+.intro1,
+.intro2 {
   color: #172b4d;
   /* padding: 4%; */
 }
@@ -369,7 +369,7 @@ footer {
   position: relative;
 }
 
-footer::after {
+/* footer::after { 
   content: "";
   background-color: transparent;
   position: absolute;
@@ -377,7 +377,7 @@ footer::after {
   right: 12.56%;
   top: 58.45%;
   bottom: -8.97%;
-}
+}*/
 
 .line {
   width: 50%;
@@ -395,4 +395,101 @@ footer::after {
 footer .social ul li {
   height: 30px;
   margin: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-image: none;
+  }
+
+  footer::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+
+  .intro-form h3 {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  .line {
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social ul li {
+    height: 30px;
+    margin: 0 5px;
+  }
+
+  .social ul li a {
+    font-size: 20px;
+  }
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.intro1{
+  margin-left: 0px;
+}
+
+.works,
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-item,
+.summary-card {
+  width: 27%;
+}
+
+.app-wrap {
+  background-image: url('Header-llustration-desktop.svg');
+}
+
+.about-me {
+  background-image: url('about-me-desktop.svg');
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: left;
+}
+
+.intro-form{
+  width: 30%;
+  text-align: left !important;
+  justify-content: flex-start;
+}
+
+.contact-form {
+  width: 50%;
+  padding-top: 3%;
+  justify-content: stretch;
+}
+
+.intro-form h3{
+  text-align: justify
+}
+
 }
