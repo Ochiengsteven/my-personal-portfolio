@@ -413,6 +413,14 @@ form {
     background-image: none;
   }
 
+  .app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #e5e5e5;
+  }
+
   footer::after {
     content: "";
     background-color: transparent;
@@ -429,6 +437,18 @@ form {
     text-align: justify;
   }
 
+  .my-mail {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .contact-form form button {
+    float: left;
+  }
+
   .line {
     width: 100%;
     height: 8px;
@@ -441,6 +461,11 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .social ul {
+    padding-top: 10%;
+    padding-bottom: 2%
   }
 
   .social ul li {
@@ -464,13 +489,22 @@ form {
     justify-content: center;
   }
 
+  .work-item {
+    padding: 1%;
+    margin: 1%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
   .work-item,
   .summary-card {
     width: 27%;
   }
 
-  .app-wrap {
+  .container-body {
     background-image: url('Header-llustration-desktop.svg');
+    background-position: 220px 0;
   }
 
   .about-me {
@@ -501,4 +535,22 @@ form {
   .container-form textarea {
     width: 100%;
   }
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+  .work-item {
+    padding: 1%;
+    margin: 1%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .works,
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
