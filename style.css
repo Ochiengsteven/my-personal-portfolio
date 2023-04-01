@@ -449,6 +449,11 @@ form {
     float: left;
   }
 
+  .btn2:active {
+    background-color: green;
+    color: white;
+  }
+
   .social {
     display: flex;
     justify-content: center;
@@ -543,5 +548,13 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #e5e5e5;
   }
 }
