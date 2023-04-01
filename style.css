@@ -169,7 +169,7 @@ p {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
   .menu {
     width: 100%;
     max-height: 0;
@@ -177,7 +177,8 @@ p {
   }
 
   label {
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-end;
   }
 
   #toggler:checked ~ .menu {
@@ -449,6 +450,28 @@ form {
     float: left;
   }
 
+  form button:focus {
+    outline: none;
+    background-color: #374e44;
+  }
+
+  .btn2 {
+    display: flex;
+    justify-content: center;
+    background-color: #36b37f;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    height: 45px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 17px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
   .btn2:active {
     background-color: green;
     color: white;
@@ -552,9 +575,13 @@ form {
 
   .app-header {
     display: flex;
-    justify-content: center;
+    justify-content: unset;
     align-items: center;
     padding: 1rem 2rem;
     color: #e5e5e5;
+  }
+  
+  button:hover {
+    background-color: #374e44;
   }
 }
