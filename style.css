@@ -47,10 +47,9 @@ h2 {
   top: 5%;
 }
 
-.my-name,
-.greeting {
+.intro1,
+.intro2 {
   color: #172b4d;
-  /* padding: 4%; */
 }
 
 .career {
@@ -170,7 +169,7 @@ p {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
   .menu {
     width: 100%;
     max-height: 0;
@@ -178,7 +177,8 @@ p {
   }
 
   label {
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-end;
   }
 
   #toggler:checked ~ .menu {
@@ -331,6 +331,12 @@ i:hover {
   padding: 0%;
 }
 
+form input,
+form textarea {
+  margin-top: 1rem;
+  padding: 10%;
+}
+
 textarea:focus {
   outline: none;
   box-shadow: 0 0 5px #60c095;
@@ -369,16 +375,6 @@ footer {
   position: relative;
 }
 
-footer::after {
-  content: "";
-  background-color: transparent;
-  position: absolute;
-  left: 49.58%;
-  right: 12.56%;
-  top: 58.45%;
-  bottom: -8.97%;
-}
-
 .line {
   width: 50%;
   height: 8px;
@@ -395,4 +391,197 @@ footer::after {
 footer .social ul li {
   height: 30px;
   margin: 0 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  gap: 24px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-image: none;
+  }
+
+  .app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #e5e5e5;
+  }
+
+  footer::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+
+  .intro-form h3 {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: justify;
+  }
+
+  .my-mail {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .contact-form form button {
+    float: left;
+  }
+
+  form button:focus {
+    outline: none;
+    background-color: #374e44;
+  }
+
+  .btn2 {
+    display: flex;
+    justify-content: center;
+    background-color: #36b37f;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    height: 45px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 17px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .btn2:active {
+    background-color: green;
+    color: white;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social ul {
+    padding-top: 10%;
+    padding-bottom: 2%;
+  }
+
+  .social ul li {
+    height: 30px;
+    margin: 0 5px;
+  }
+
+  .social ul li a {
+    font-size: 20px;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .works,
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .work-item {
+    padding: 1%;
+    margin: 1%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .work-item,
+  .summary-card {
+    width: 27%;
+  }
+
+  .container-body {
+    background-image: url('Header-llustration-desktop.svg');
+    background-position: 220px 0;
+  }
+
+  .about-me {
+    background-image: url('about-me-desktop.svg');
+  }
+
+  .container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .intro-form {
+    width: 30%;
+    text-align: left !important;
+    justify-content: flex-start;
+  }
+
+  .contact-form {
+    width: 50%;
+    padding-top: 3%;
+  }
+
+  .container-form input[type="text"],
+  .container-form input[type="email"],
+  .container-form textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+  .work-item {
+    padding: 1%;
+    margin: 1%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .works,
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .app-header {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #e5e5e5;
+  }
+
+  button:hover {
+    background-color: #374e44;
+  }
 }
