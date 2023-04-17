@@ -106,7 +106,7 @@ npx eslint .
 ### Deployment <a name="deployment"></a>
 
 You can deploy this project using: GitHub Pages,
-- I used GitHub Pages to deploy my website.
+- I used GitHub Pages to deploy my website. (https://ochiengsteven.github.io/)
 - For more information about publishing sources, see "[About GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)".
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
