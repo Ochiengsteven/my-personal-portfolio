@@ -121,8 +121,7 @@ nav #mainMenu .closeMenu {
     right: 0;
     z-index: 10;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: #fff;
     transition: top 1s ease;
     display: none;
